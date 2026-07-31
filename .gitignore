@@ -1,0 +1,42 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# --- Data & generated outputs: not published to GitHub ---
+# Raw/reference data, pipeline outputs, and figures are excluded because some
+# inputs (survey responses, presentation slides) should not be made public.
+# Keep the folder structure (via .gitkeep) so the pipeline still runs after
+# a fresh clone once you drop your own data into data/raw/.
+data/raw/*
+!data/raw/.gitkeep
+data/reference/*
+!data/reference/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+results/figures/*
+!results/figures/.gitkeep
+# Referenced directly in README.md - keep public
+!results/figures/baseline_pcd_matrix_2020_2022.png
+!results/figures/final_risk_coefficient_ranking.png
+!results/figures/fvi_fdi_matrix_2020_2022.png
+results/tables/*
+!results/tables/.gitkeep
+
+docs/presentation.pdf
+docs/final_report.pdf
+reports/artifacts/*
+!reports/artifacts/.gitkeep
